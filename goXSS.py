@@ -20,7 +20,7 @@ def breakChars():
 
 def attackUrl():
     generatePayload()
-    tryToBreak = ['<','>','"','script','/','(',')']
+    tryToBreak = ['<','>','"','script','/','=',':']
     for Char in tryToBreak:
         global inject
         inject = str(Char)
